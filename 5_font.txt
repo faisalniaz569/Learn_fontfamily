@@ -1,0 +1,185 @@
+********************
+
+CHAPTER: 05
+
+********************
+
+** font
+
+font-family 	name	Required. Defines the name of the font.
+
+src	            URL
+
+font-stretch =>	normal, condensed, ultra-condensed, extra-condensed, semi-condensed
+                expanded, semi-expanded, extra-expanded, ultra-expanded
+
+
+font-style	=> normal, italic, oblique
+
+font-weight =>	normal, bold, 100, 200, 300, 400, 500,
+                600, 700, 800, 900
+                
+font-variant: normal|small-caps|initial|inherit;
+
+============================================================================================================
+
+
+** font-variant-caps
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.normal {font-variant-caps: normal;}
+p.small {font-variant-caps: small-caps;}
+p.allsmall {font-variant-caps: all-small-caps;}
+p.petite {font-variant-caps: petite-caps;}
+p.allpetite {font-variant-caps: all-petite-caps;}
+p.unicase {font-variant-caps: unicase;}
+p.titling {font-variant-caps: titling-caps;}
+</style>
+</head>
+<body>
+
+<h1>The font-variant-caps Property</h1>
+
+<p class="normal">My name is Hege Refsnes.</p>
+<p class="small">My name is Hege Refsnes.</p>
+<p class="allsmall">My name is Hege Refsnes.</p>
+<p class="petite">My name is Hege Refsnes.</p>
+<p class="allpetite">My name is Hege Refsnes.</p>
+<p class="unicase">My name is Hege Refsnes.</p>
+<p class="titling">My name is Hege Refsnes.</p>
+
+<p><b>Note:</b> Safari do not support the font-variant-caps property.</p>
+
+</body>
+</html>
+
+==========================================================================================================
+
+** font-feature-settings
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+/* enable small-caps */
+.ex1 { font-feature-settings: "smcp" on; }
+
+/* convert both upper and lowercase to small caps */
+.ex2 { font-feature-settings: "c2sc", "smcp"; }
+
+/* no common ligatures */
+.ex3 { font-feature-settings: "liga" 0; }
+
+/* enable automatic fractions */
+.ex4 { font-feature-settings: "frac"; }
+</style>
+</head>
+<body>
+
+<h1>The font-feature-settings Property</h1>
+
+<div class="ex1">This is some text 0123.</div>
+<div class="ex2">This is some text 0123.</div>
+<div class="ex3">This is some text 0123.</div>
+<div class="ex4">This is some text 0123.</div>
+
+</body>
+</html>
+
+font-feature-settings: normal|feature-value;
+
+=====================================================================================================
+
+** font-kerning
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+/* Specifies that font kerning is applied */
+.ex1 { font-kerning: normal; }
+
+/* Specifies that font kerning is not applied */
+.ex2 { font-kerning: none; }
+</style>
+</head>
+<body>
+
+<h1>The font-kerning Property</h1>
+
+<div class="ex1">"STAY 'AWAY'"</div>
+<div class="ex2">"STAY 'AWAY'"</div>
+
+</body>
+</html>
+
+======================================================================================================
+
+** font-size-adjust
+
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.a {font-family: verdana;}
+div.b {font-family: 'times new roman';}
+#div1, #div2 {font-size-adjust: 0.58;}
+</style>
+</head>
+<body>
+
+<h1>The font-size-adjust Property</h1>
+
+<p><b>Note:</b> Only Firefox supports the font-size-adjust property.</p>
+
+<h2>Two divs with the same font-size-adjust property:</h2>
+<div id="div1" class="a">
+You control the font size better with the font-size-adjust property.
+</div>
+<div id="div2" class="b">
+You control the font size better with the font-size-adjust property.
+</div>
+
+<h2>Two divs without the font-size-adjust property:</h2>
+<div class="a">
+You control the font size better with the font-size-adjust property.
+</div>
+<div class="b">
+You control the font size better with the font-size-adjust property.
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,391 @@
+<pre>
+
+********************
+
+CHAPTER: 1
+
+********************
+
+## Fonts
+
+Choosing the right font for your website is important!
+
+Choosing the right font has a huge impact on how the readers experience a website.
+
+In CSS there are five generic font families:
+
+1. Serif,
+
+2. Sans-serif,
+
+3. Monospace,
+
+4. Cursive,
+
+5. Fantasy
+
+</pre>
+
+<img src="font.png" alt="font" /> <br>
+
+<img src="font2.png" alt="font" /> <br>
+
+<pre>
+
+In CSS, we use the font-family property to specify the font of a text.
+
+Example:
+
+</pre>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .p1 {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .p2 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .p3 {
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS font-family</h1>
+    <p class="p1">This is a paragraph, shown in the Times New Roman font. (serif) </p>
+    <p class="p2">This is a paragraph, shown in the Arial font. (sans-serif)</p>
+    <p class="p3">This is a paragraph, shown in the Lucida Console font. (monospace)</p>
+
+</body>
+
+</html>
+
+
+<br><br>
+
+<pre>
+
+    The following list are the best web safe fonts for HTML and CSS:
+
+    Arial (sans-serif)
+    Verdana (sans-serif)
+    Tahoma (sans-serif)
+    Trebuchet MS (sans-serif)
+    Times New Roman (serif)
+    Georgia (serif)
+    Garamond (serif)
+    Courier New (monospace)
+    Brush Script MT (cursive)
+    
+</pre>
+
+
+<pre>
+    
+    <h2>Serif Fonts</h2>
+    
+    1. "Times New Roman", Times, serif,
+    2. Georgia, serif,
+    3. Garamond, serif
+    
+    
+    <h2>Sans-Serif Fonts</h2>
+    
+    1. Arial, Helvetica, sans-serif,
+    2. Tahoma, Verdana, sans-serif,
+    3. "Trebuchet MS", Helvetica, sans-serif,
+    4. Geneva, Verdana, sans-serif
+    
+    <h2>Monospace Fonts</h2>
+    
+    1. "Courier New", Courier, monospace
+    
+    <h2>Cursive Fonts</h2>
+    
+    1. "Brush Script MT", cursive
+    
+    
+    <h2>Fantasy Fonts</h2>
+    
+    1. Copperplate, Papyrus, fantasy
+    
+    
+    font-family: family-name|generic-family|initial|inherit;
+    
+</pre>
+
+
+
+
+***********************************************************************************************
+
+<h1>Font Style</h1>
+
+<pre>
+
+The font-style property is mostly used to specify italic text.
+
+This property has three values:
+
+normal - The text is shown normally
+italic - The text is shown in italics
+oblique - The text is "leaning" (oblique is very similar to italic, but less supported)
+
+</pre>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.normal {
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+p.oblique {
+  font-style: oblique;
+}
+</style>
+</head>
+<body>
+
+<h1>The font-style property</h1>
+
+<p class="normal">This is a paragraph in normal style.</p>
+<p class="italic">This is a paragraph in italic style.</p>
+<p class="oblique">This is a paragraph in oblique style.</p>
+
+</body>
+</html>
+
+
+***************************************************************************************************
+
+
+<h1>Font Weight</h1>
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.normal {
+  font-weight: normal;
+}
+
+p.light {
+  font-weight: lighter;
+}
+
+p.thick {
+  font-weight: bold;
+}
+
+p.thicker {
+  font-weight: 900;
+}
+</style>
+</head>
+<body>
+
+<h1>The font-weight property</h1>
+
+<p class="normal">This is a paragraph. (normal)</p>
+<p class="light">This is a paragraph. (lighter)</p>
+<p class="thick">This is a paragraph. (bold)</p>
+<p class="thicker">This is a paragraph. (bold)</p>
+
+</body>
+</html>
+
+
+
+**********************************************************************************************************
+
+<h1>Font Variant</h1>
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.normal {
+  font-variant: normal;
+}
+
+p.small {
+  font-variant: small-caps;
+}
+</style>
+</head>
+<body>
+
+<h1>The font-variant property</h1>
+
+<p class="normal">My name is Hege Refsnes. (normal)</p>
+<p class="small">My name is Hege Refsnes. (small capital letter)</p>
+
+</body>
+</html>
+
+
+
+***********************************************************************************************
+
+<h1>Font Size</h1>
+
+
+Example:
+
+<span>Font Size With Pixels</span>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+</body>
+</html>
+
+
+Example 2:
+
+<span>Font Size With Em</span>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  font-size: 2.5em; /* 40px/16=2.5em */
+}
+
+h2 {
+  font-size: 1.875em; /* 30px/16=1.875em */
+ }
+
+p {
+  font-size: 0.875em; /* 14px/16=0.875em */
+}
+</style>
+</head>
+<body>
+
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<p>This is a paragraph.</p>
+<p>Specifying the font-size in em allows all major browsers to resize the text.
+Unfortunately, there is still a problem with older versions of IE. When resizing the text, it becomes larger/smaller than it should.</p>
+
+</body>
+</html>
+
+
+**********************************************************************************************************
+
+<pre>
+
+Font shorthand property:
+
+The font property is a shorthand property for:
+
+font-style (font-style: normal|italic|oblique|initial|inherit)
+font-variant (font-variant: normal|small-caps|initial|inherit)
+font-weight (font-weight: font-weight: normal|bold|bolder|lighter|number|initial|inherit)
+font-size/line-height (font-size:medium|xx-small|x-small|small|large|x-large|xx-large|smaller|larger|length|initial|inherit|%)
+font-family (font-family: family-name|generic-family|initial|inherit;)
+
+</pre>
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.a {
+  font: 20px Arial, sans-serif;
+}
+
+p.b {
+  font: italic bold 12px/30px Georgia, serif;
+}
+</style>
+</head>
+<body>
+
+<h1>The font Property</h1>
+
+<p class="a">This is a paragraph. The font size is set to 20 pixels, and the font family is Arial.</p>
+
+<p class="b">This is a paragraph. The font is set to italic and bold, the font size is set to 12 pixels, the line height is set to 30 pixels, and the font family is Georgia.</p>
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+p {
+  font: italic small-caps bold 12px/30px Georgia, serif;
+}
+</style>
+</head>
+<body>
+
+<h1>The font Property</h1>
+
+<p class="b">This is a paragraph. The font is set to italic and bold, the font size is set to 12 pixels, the line height is set to 30 pixels, and the font family is Georgia.</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

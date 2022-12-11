@@ -1,0 +1,53 @@
+********************
+
+CHAPTER: 04
+
+********************
+
+@font-face
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+
+div {
+  font-family: myFirstFont;
+}
+</style>
+</head>
+<body>
+
+<h1>The @font-face Rule</h1>
+
+<div>With CSS, websites can finally use fonts other than the pre selected "web-safe" fonts.</div>
+
+</body>
+</html>
+
+The @font-face rule is supported in Edge, Chrome, Firefox, Safari, and Opera.
+
+Font format:
+
+TTF/OTF, WOFF, WOFF2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
